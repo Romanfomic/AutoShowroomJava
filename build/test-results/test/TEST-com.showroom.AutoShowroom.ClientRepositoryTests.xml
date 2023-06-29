@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.showroom.AutoShowroom.ClientRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-15T07:08:23" hostname="DESKTOP-MUPO5AG" time="0.235">
+  <properties/>
+  <testcase name="testAddNews()" classname="com.showroom.AutoShowroom.ClientRepositoryTests" time="0.235"/>
+  <system-out><![CDATA[10:08:20.624 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ClientRepositoryTests]: using SpringBootContextLoader
+10:08:20.629 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.showroom.AutoShowroom.ClientRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:08:20.630 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.showroom.AutoShowroom.ClientRepositoryTests]: ClientRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:08:20.667 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper -- Using ContextCustomizers for test class [ClientRepositoryTests]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+10:08:20.709 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [E:\Programming\IntelliJ IDEA 2022.3.3\Projects\AutoShowroom\build\classes\java\main\com\showroom\AutoShowroom\AutoShowroomApplication.class]
+10:08:20.711 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.showroom.AutoShowroom.AutoShowroomApplication for test class com.showroom.AutoShowroom.ClientRepositoryTests
+10:08:20.726 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper -- Using TestExecutionListeners for test class [ClientRepositoryTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+10:08:20.728 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ClientRepositoryTests], class annotated with @DirtiesContext [false] with mode [null]
+10:08:20.739 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener -- Performing dependency injection for test class com.showroom.AutoShowroom.ClientRepositoryTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-06-15T10:08:21.001+03:00  INFO 17464 --- [    Test worker] c.s.AutoShowroom.ClientRepositoryTests   : Starting ClientRepositoryTests using Java 17.0.7 with PID 17464 (started by 3BE3DA in E:\Programming\IntelliJ IDEA 2022.3.3\Projects\AutoShowroom)
+2023-06-15T10:08:21.002+03:00  INFO 17464 --- [    Test worker] c.s.AutoShowroom.ClientRepositoryTests   : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T10:08:21.290+03:00  INFO 17464 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T10:08:21.344+03:00  INFO 17464 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2023-06-15T10:08:21.626+03:00  INFO 17464 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T10:08:21.669+03:00  INFO 17464 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-15T10:08:21.895+03:00  INFO 17464 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-15T10:08:22.144+03:00  INFO 17464 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@721bf7ad
+2023-06-15T10:08:22.146+03:00  INFO 17464 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-15T10:08:22.192+03:00  INFO 17464 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-15T10:08:22.856+03:00  INFO 17464 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T10:08:22.865+03:00  INFO 17464 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T10:08:23.188+03:00  INFO 17464 --- [    Test worker] c.s.AutoShowroom.ClientRepositoryTests   : Started ClientRepositoryTests in 2.419 seconds (process running for 3.367)
+Hibernate: select next_val as id_val from car_seq for update
+Hibernate: update car_seq set next_val= ? where next_val=?
+Hibernate: insert into car (anons, full_text, title, views, id) values (?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
